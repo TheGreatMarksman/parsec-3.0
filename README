@@ -433,3 +433,19 @@ You can reach the PARSEC team as follows:
 	http://parsec.cs.princeton.edu/
 	parsec@lists.cs.princeton.edu
 
+### CMPT 450
+
+To run:
+* `bash`
+* Check prerequisites:
+	* ```gcc --version
+		g++ --version
+		make --version```
+	* If missing (Ubuntu/Debian):
+		* ```sudo apt update
+			sudo apt install build-essential```
+* `source env.sh`
+* Test run:
+	* `parsecmgmt -a build -p blackscholes`
+* Build (only non-graphics benchmarks using gcc-serial configuration)
+	* `parsecmgmt -a build -p blackscholes canneal fluidanimate freqmine ferret bodytrack -c gcc-serial`
